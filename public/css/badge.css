@@ -1,0 +1,77 @@
+/* Entry Fee Badge */
+.entry-fee-badge {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    background: linear-gradient(135deg, #ffd700, #ffaa00);
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+    transform: rotate(-10deg);
+    z-index: 10;
+    text-align: center;
+    border: 3px solid #fff;
+    animation: float-badge 4s ease-in-out infinite;
+}
+
+@keyframes float-badge {
+
+    0%,
+    100% {
+        transform: rotate(-10deg) translateY(0);
+    }
+
+    50% {
+        transform: rotate(-10deg) translateY(-10px);
+    }
+}
+
+.fee-label {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #000;
+    text-transform: uppercase;
+    border-bottom: 2px dashed #000;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-family: var(--font-heading);
+}
+
+.fee-option {
+    margin-bottom: 0.5rem;
+}
+
+.fee-option .amount {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #000000;
+    line-height: 1;
+}
+
+.fee-option .duration {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.fee-divider {
+    height: 1px;
+    background: rgba(0, 0, 0, 0.2);
+    margin: 0.5rem 0;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .entry-fee-badge {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: rotate(0);
+        margin-bottom: 2rem;
+        display: inline-block;
+        animation: none;
+    }
+}

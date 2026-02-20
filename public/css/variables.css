@@ -1,0 +1,61 @@
+:root {
+    /* Colors */
+    --color-bg: #050505;
+    --color-bg-alt: #0a0a0a;
+    --color-text: #ffffff;
+    --color-text-muted: #a0a0a0;
+
+    /* Neon Accents */
+    --color-primary: #00f3ff;
+    /* Cyan */
+    --color-primary-glow: rgba(0, 243, 255, 0.5);
+    --color-secondary: #bd00ff;
+    /* Purple */
+    --color-secondary-glow: rgba(189, 0, 255, 0.5);
+    --color-accent: #ff0055;
+    /* Pink/Red for highlights */
+
+    /* Gradients */
+    --gradient-main: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    --gradient-text: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+
+    /* Glassmorphism */
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.05);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    --backdrop-blur: blur(10px);
+
+    /* Typography */
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --spacing-xl: 8rem;
+
+    /* Layout */
+    --container-width: 1200px;
+    --header-height: 80px;
+    --border-radius: 12px;
+
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-medium: 0.4s ease;
+}
+
+/* Light Theme Variables */
+body.light-theme {
+    /* Colors */
+    --color-bg: #ffffff;
+    --color-bg-alt: #f0f0f0;
+    --color-text: #1a1a1a;
+    --color-text-muted: #555555;
+
+    /* Glassmorphism overrides for Light Mode */
+    --glass-bg: rgba(0, 0, 0, 0.05);
+    --glass-border: rgba(0, 0, 0, 0.1);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YuGen Fest '26 | College Cultural Fest</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Razorpay SDK -->
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <span class="text-gradient">YuGen Fest '26</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#location">Location</a></li>
+            <li>
+                <button id="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </li>
+
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+
+        <div class="hero-content container">
+            <span class="hero-subtitle">The Ultimate Techno-Cultural Fest</span>
+            <!-- Entry Fee Badge -->
+            <div class="entry-fee-badge">
+                <span class="fee-label">Entry Fee</span>
+                <div class="fee-option">
+                    <span class="amount">₹250</span>
+                    <span class="duration">For 1 Day</span>
+                </div>
+                <div class="fee-divider"></div>
+                <div class="fee-option">
+                    <span class="amount">₹400</span>
+                    <span class="duration">For 2 Days</span>
+                </div>
+            </div>
+
+            <h1 class="hero-title h1">YuGen Fest <br> <span class="text-gradient">'26</span></h1>
+            <p class="hero-description">
+                Celebrating Innovation, Culture, and Talent at JKK Munirajah College of Technology.
+                Join us for an electrifying experience with technical and non-technical events!
+            </p>
+            <div class="hero-cta">
+                <a href="#events" class="btn btn-primary">Explore Events</a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Departments Marquee -->
+    <div class="marquee-container">
+        <div class="marquee-content">
+            <span>COMPUTER SCIENCE</span>
+            <span>•</span>
+            <span>ELECTRICAL & ELECTRONICS</span>
+            <span>•</span>
+            <span>ELECTRONICS & COMMUNICATION</span>
+            <span>•</span>
+            <span>MECHANICAL</span>
+            <span>•</span>
+            <span>CIVIL</span>
+            <span>•</span>
+            <span>INFORMATION TECHNOLOGY</span>
+            <span>•</span>
+            <span>AI & DATA SCIENCE</span>
+            <span>•</span>
+            <span>AUTOMOBILE</span>
+            <span>•</span>
+            <span>MBA</span>
+            <span>•</span>
+            <span>MCA</span>
+            <span>•</span>
+        </div>
+        <div class="marquee-content" aria-hidden="true">
+            <span>COMPUTER SCIENCE</span>
+            <span>•</span>
+            <span>ELECTRICAL & ELECTRONICS</span>
+            <span>•</span>
+            <span>ELECTRONICS & COMMUNICATION</span>
+            <span>•</span>
+            <span>MECHANICAL</span>
+            <span>•</span>
+            <span>CIVIL</span>
+            <span>•</span>
+            <span>INFORMATION TECHNOLOGY</span>
+            <span>•</span>
+            <span>AI & DATA SCIENCE</span>
+            <span>•</span>
+            <span>AUTOMOBILE</span>
+            <span>•</span>
+            <span>MBA</span>
+            <span>•</span>
+            <span>MCA</span>
+            <span>•</span>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container about-container">
+            <div class="about-content">
+                <span class="section-subtitle">Discover</span>
+                <h2 class="section-title h2">About YuGen Fest '26</h2>
+                <p class="section-text">
+                    YuGen Fest '26 is the annual techno-cultural symposium of JKK Munirajah College of Technology.
+                    It's a platform where technology meets tradition, and innovation meets creativity.
+                    Witness a convergence of the brightest minds competing in a diverse range of events.
+                </p>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Events</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">40+</span>
+                        <span class="stat-label">Colleges</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5000+</span>
+                        <span class="stat-label">Footfall</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-visual">
+                <!-- Placeholder for an image or 3D element -->
+                <!-- Image Slider -->
+                <div class="about-slider">
+                    <div class="slides-container">
+                        <!-- User to replace these images -->
+                        <img src="assets/images/about_1.jpg" class="slide active" alt="YuGen Fest Highlight 1">
+                        <img src="assets/images/about_2.jpg" class="slide" alt="YuGen Fest Highlight 2">
+                        <img src="assets/images/about_3.jpg" class="slide" alt="YuGen Fest Highlight 3">
+                        <img src="assets/images/about_4.jpg" class="slide" alt="YuGen Fest Highlight 4">
+                        <img src="assets/images/about_2.jpg" class="slide" alt="YuGen Fest Highlight 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Mark Your Calendar</span>
+                <h2 class="section-title h2">Event Dimensions</h2>
+            </div>
+
+            <!-- Tabs Navigation -->
+            <div class="tabs-container">
+                <button class="tab-btn active" data-tab="day1">Day 1</button>
+                <button class="tab-btn" data-tab="day2">Day 2</button>
+            </div>
+
+            <!-- Day 1 Events Content -->
+            <div class="tab-content active" id="day1">
+                <!-- Content will be injected dynamically -->
+            </div>
+
+            <!-- Day 2 Events Content -->
+            <div class="tab-content" id="day2">
+                <!-- Content will be injected dynamically -->
+            </div>
+
+            <div class="view-all-container">
+                <a href="#" class="btn">View All Events</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Memories</span>
+                <h2 class="section-title h2">Glimpses of Past</h2>
+            </div>
+            <div class="gallery-grid">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item">
+                    <img src="assets/images/about_1.jpg" alt="Gallery Image 1" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-plus gallery-icon"></i>
+                    </div>
+                </div>
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item">
+                    <img src="assets/images/about_2.jpg" alt="Gallery Image 2" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-plus gallery-icon"></i>
+                    </div>
+                </div>
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item">
+                    <img src="assets/images/about_3.jpg" alt="Gallery Image 3" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-plus gallery-icon"></i>
+                    </div>
+                </div>
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item">
+                    <img src="assets/images/about_4.jpg" alt="Gallery Image 4" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-plus gallery-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="section" style="background-color: var(--color-bg);">
+        <div class="container">
+            <div class="location-header" style="margin-bottom: 2rem;">
+                <span class="section-subtitle"
+                    style="border-left: 3px solid var(--color-text); padding-left: 10px; color: var(--color-text);">Event
+                    Location</span>
+            </div>
+            <div class="location-grid">
+                <div class="location-text">
+                    <h2 class="h1" style="font-size: 3.5rem; line-height: 1.1; margin-bottom: 2rem;">
+                        Join Us at <br>
+                        <span style="color: var(--color-text-muted);">JKK Munirajah</span> <br>
+                        College of <br>
+                        Technology
+                    </h2>
+                    <p style="font-size: 1.1rem; color: var(--color-text-muted); max-width: 500px;">
+                        YuGen Fest '26 will be hosted at the vibrant campus of <strong>JKK Munirajah College of
+                            Technology</strong>,
+                        offering world-class infrastructure, spacious venues, and an energetic atmosphere to celebrate
+                        culture, talent, and innovation.
+                    </p>
+                </div>
+                <div class="location-map">
+                    <div class="map-card">
+                        <iframe
+                            src="https://www.google.com/maps?q=J.K.K.Munirajah+College+of+Technology+Erode&output=embed"
+                            width="100%" height="400" style="border:0; border-radius: var(--border-radius);"
+                            allowfullscreen="" loading="lazy">
+                        </iframe>
+                        <div class="map-overlay">
+                            <div class="map-info">
+                                <strong>JKK Munirajah College of Technology</strong><br>
+                                T.N.Palayam, Gobichettipalayam<br>
+                                <a href="https://maps.google.com?q=J.K.K.Munirajah+College+of+Technology"
+                                    target="_blank"
+                                    style="color: var(--color-primary); font-weight: bold; margin-top: 5px; display: inline-block;">Directions
+                                    <i class="fas fa-location-arrow"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color: #000; border-top: 1px solid #222; padding-top: 4rem;">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand -->
+                <div class="footer-col brand-col">
+                    <h3 class="text-gradient" style="font-size: 2.5rem; line-height: 1.2; margin-bottom: 1rem;">
+                        YuGen Fest<br>2026</h3>
+                    <p style="color: var(--color-text-muted); max-width: 300px;">
+                        YuGen Fest '26 will be hosted at the vibrant campus of <strong>JKK Munirajah College of
+                            Technology</strong>.
+                    </p>
+                </div>
+
+                <!-- Contact -->
+                <div class="footer-col">
+                    <h4 style="color: var(--color-text); font-size: 1.5rem; margin-bottom: 1.5rem;">Contact</h4>
+                    <p style="margin-bottom: 0.5rem;"><i class="fas fa-phone-alt"
+                            style="margin-right: 10px; color: var(--color-primary);"></i> +91 9578191257</p>
+                    <p style="margin-bottom: 0.5rem;"><i class="fas fa-phone-alt"
+                            style="margin-right: 10px; color: var(--color-primary);"></i> +91 9345379991</p>
+                    <p><i class="fas fa-envelope" style="margin-right: 10px; color: var(--color-primary);"></i>
+                        yugenfest26@gmail.com</p>
+                </div>
+
+                <!-- Address -->
+                <div class="footer-col">
+                    <h4 style="color: var(--color-text); font-size: 1.5rem; margin-bottom: 1.5rem;">Address</h4>
+                    <p style="color: var(--color-text-muted); line-height: 1.6;">
+                        JKK Munirajah College of Technology,<br>
+                        T.N.Palayam, Gobichettipalayam,<br>
+                        Erode - 638506, Tamil Nadu.
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom"
+                style="margin-top: 4rem; display: flex; justify-content: space-between; flex-wrap: wrap; border-top: 1px solid #222; padding-top: 2rem;">
+                <p>&copy; 2026 JKKMCT. All Rights Reserved.</p>
+                <div class="footer-links-inline">
+                    <a href="#" style="margin-right: 20px; color: var(--color-text-muted);">Terms</a>
+                    <a href="#" style="margin-right: 20px; color: var(--color-text-muted);">Privacy</a>
+                    <a href="#" style="color: var(--color-text-muted);">Policy</a>
+                </div>
+                <p style="opacity: 0.7;">Powered by <span
+                        style="font-weight: bold; color: #fff;">TechChallengers1817</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Registration Modal -->
+    <div id="registration-modal" class="modal">
+        <div class="modal-content modal-wide">
+            <span class="close-modal">&times;</span>
+
+            <div class="modal-body-grid">
+                <!-- Left Column: Event Information -->
+                <div class="modal-event-info">
+                    <!-- View 1: Event Details (Matches Sketch) -->
+                    <div id="modal-view-details">
+                        <div class="modal-header-center">
+                            <!-- Dynamic Header: (Event Name) + Rules -->
+                            <h2 class="h2 text-gradient"><span id="dynamic-event-name">Event</span> Rules</h2>
+                        </div>
+
+                        <div class="rules-container">
+                            <h3 class="section-label">Rules & Condition:</h3>
+                            <div class="rules-box">
+                                <ul id="modal-rules-list">
+                                    <!-- Rules injected here -->
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="coordinators-container">
+                            <p class="contact-instruction">If you have any doubt you can contact event coordinators</p>
+                            <div class="coordinators-row" id="modal-coordinators">
+                                <!-- Coordinators injected here -->
+                            </div>
+                        </div>
+
+                        <div class="modal-footer-action">
+                            <button id="btn-show-form" class="btn btn-primary btn-pill">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Column: Registration Form -->
+                <div class="modal-form-section">
+                    <!-- View 2: Registration Form (Initially Hidden) -->
+                    <div id="modal-view-form" style="display: none;">
+                        <div class="modal-header">
+                            <button id="btn-back-details" class="btn-link"><i class="fas fa-arrow-left"></i>
+                                Back</button>
+                            <h3 class="h3">Register Now</h3>
+                        </div>
+
+                        <form id="registration-form">
+                            <div class="form-group">
+                                <label class="form-label">Select Pass Type</label>
+                                <select id="reg-pass-type" class="form-input-pill" required
+                                    onchange="handlePassTypeChange()">
+                                    <option value="" disabled selected>Select Pass</option>
+                                    <option value="Day 1 Pass (₹250)">Day 1 Pass (₹250)</option>
+                                    <option value="Day 2 Pass (₹250)">Day 2 Pass (₹250)</option>
+                                    <option value="2 Days Pass (₹400)">2 Days Pass (₹400)</option>
+                                </select>
+                            </div>
+
+                            <!-- Event Selection Container (Dynamic) -->
+                            <div id="event-selection-container" style="display: none; margin-bottom: 20px;">
+                                <label style="color: #00f3ff; margin-bottom: 10px; display: block;">Select Events (Max
+                                    4):</label>
+                                <div id="events-checkbox-list"
+                                    style="max-height: 150px; overflow-y: auto; background: #1a1a1a; padding: 10px; border-radius: 8px;">
+                                    <!-- Checkboxes injected here -->
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label class="form-label">Full Name</label>
+                                <input type="text" id="reg-name" class="form-input-pill" required>
+                            </div>
+
+                            <!-- New Fields from Sketch -->
+                            <div class="form-group">
+                                <label class="form-label">Department:</label>
+                                <input type="text" id="reg-dept" class="form-input-pill" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Year:</label>
+                                <select id="reg-year" class="form-input-pill" required>
+                                    <option value="" disabled selected>Select Year</option>
+                                    <option value="1">1st Year</option>
+                                    <option value="2">2nd Year</option>
+                                    <option value="3">3rd Year</option>
+                                    <option value="4">4th Year</option>
+                                    <option value="PG">PG</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">R.No:</label>
+                                <input type="text" id="reg-roll" class="form-input-pill" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">College:</label>
+                                <input type="text" id="reg-college" class="form-input-pill" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Phone Number:</label>
+                                <input type="tel" id="reg-phone" class="form-input-pill" required pattern="[0-9]{10}"
+                                    title="Enter 10 digit mobile number">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Mail address</label>
+                                <input type="email" id="reg-email" class="form-input-pill" required>
+                            </div>
+
+                            <!-- Hidden Event Select (Auto-filled) -->
+                            <input type="hidden" id="reg-event-id">
+
+                            <div id="team-members-container" style="display: none; margin-top: 10px;">
+                                <label class="form-label">
+                                    Team Members <small style="color: grey;">(Enter names)</small>
+                                </label>
+                                <div id="team-inputs"></div>
+                                <button type="button" id="add-member-btn" class="btn-link"
+                                    style="font-size: 0.8rem; margin-top: 5px;">+ Add Member</button>
+                            </div>
+
+                            <div class="payment-info"
+                                style="margin: 1rem 0; padding: 1rem; background: rgba(0, 243, 255, 0.1); border-radius: 8px;">
+                                <p style="font-size: 0.9rem;">Registration Fee: <span id="reg-fee-display"
+                                        style="color: var(--color-primary); font-weight: bold;">₹250</span></p>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" style="width: 100%; border-radius: 50px;">Pay
+                                & Register</button>
+                        </form>
+
+                        <div id="payment-status" style="display:none; margin-top: 1rem; text-align: center;">
+                            <i class="fas fa-circle-notch fa-spin"
+                                style="color: var(--color-primary); font-size: 2rem;"></i>
+                            <p style="margin-top: 0.5rem; color: var(--color-text);">Processing Secured Payment...</p>
+                        </div>
+
+                        <div id="success-message"
+                            style="display:none; margin-top: 1rem; text-align: center; color: var(--color-primary);">
+                            <i class="fas fa-check-circle" style="font-size: 3rem; margin-bottom: 0.5rem;"></i>
+                            <h3 class="h3">Registration Successful!</h3>
+                            <p style="color: var(--color-text-muted);">Check your email for the ticket.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
