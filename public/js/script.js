@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function fetchConfig() {
         try {
-            const response = await fetch('/api/config');
+            const response = await fetch('/.netlify/functions/config');
             const data = await response.json();
             razorpayKey = data.razorpayKey;
             console.log("Razorpay Key Loaded");
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function fetchEvents() {
         try {
-            const response = await fetch('/api/events');
+            const response = await fetch('/.netlify/functions/events');
             if (!response.ok) throw new Error('Failed to fetch events');
             allEvents = await response.json(); // Store globally
             renderEvents(allEvents);
@@ -564,7 +564,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Simulate network delay for payment
             await new Promise(resolve => setTimeout(resolve, 2000));
 
-            const response = await fetch('/api/register', {
+            const response = await fetch('/.netlify/functions/register', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData)
@@ -574,7 +574,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (response.ok) {
                 // 2. Create Razorpay Order
-                const createOrderRes = await fetch('/api/create-order', {
+                const createOrderRes = await fetch('/.netlify/functions/create-order', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
@@ -599,7 +599,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             // 3. Verify Payment
                             document.getElementById('payment-status').querySelector('p').textContent = 'Verifying Payment...';
 
-                            const verifyRes = await fetch('/api/verify-payment', {
+                            const verifyRes = await fetch('/.netlify/functions/verify-payment', {
                                 method: 'POST',
                                 headers: { 'Content-Type': 'application/json' },
                                 body: JSON.stringify({

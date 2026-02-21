@@ -1,23 +1,19 @@
 {
-  "name": "aura-2026-backend",
+  "name": "yugenfest-2026",
   "version": "1.0.0",
-  "description": "Fullstack backend for Aura 2026 Cultural Fest",
-  "main": "server.js",
+  "description": "YuGen Fest 2026 Cultural Symposium - Netlify Serverless",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node --watch server.js"
+    "dev": "netlify dev",
+    "start": "netlify dev"
   },
   "dependencies": {
-    "body-parser": "^1.20.2",
-    "cors": "^2.8.6",
     "dotenv": "^17.3.1",
-    "express": "^4.18.2",
-    "express-rate-limit": "^8.2.1",
-    "helmet": "^8.1.0",
     "jsonwebtoken": "^9.0.3",
-    "multer": "^2.0.2",
     "nodemailer": "^8.0.1",
     "pg": "^8.18.0",
     "razorpay": "^2.9.6"
+  },
+  "devDependencies": {
+    "netlify-cli": "^17.0.0"
   }
 }

@@ -173,7 +173,7 @@
     </div>
 
     <script>
-        const API_BASE_ADMIN = '/api/admin';
+        const API_BASE_ADMIN = '/.netlify/functions';
 
         // Check if already logged in
         if (localStorage.getItem('adminToken')) {
@@ -193,7 +193,7 @@
             submitBtn.disabled = true;
 
             try {
-                const res = await fetch(`${API_BASE_ADMIN}/login`, {
+                const res = await fetch(`${API_BASE_ADMIN}/admin-login`, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ username, password })
